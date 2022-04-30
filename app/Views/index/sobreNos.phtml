@@ -1,0 +1,18 @@
+<h2>Sobre nós</h2>
+<hr>
+
+<!-- Abaixo o que é exibido na tela oriundo do PHP -->
+<?php 
+
+    echo 'Chegamos ao IndexController e disparamos a action sobreNos que requisita em Viwers/sobreNos.phtml';
+
+    echo '<br>';
+
+    //origem: Produto.php (Model) e IndexController.php (Controller)
+    foreach($this->view->dados as $indice => $info) {
+?>
+    <br>
+    <h3><?= $info['id'] ?></h3>
+    <div class="bg-success text-light"><b><?= $info['titulo'] ?></b>: <?= $info['descricao'] ?></div>
+
+<?php } ?>

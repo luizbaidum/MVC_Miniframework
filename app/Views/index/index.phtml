@@ -1,0 +1,18 @@
+<h2>Index</h2>
+<hr>
+
+<!-- Abaixo o que é exibido na tela oriundo do PHP -->
+<?php 
+
+    echo 'Chegamos ao IndexController e disparamos a action index que requisita em Viwers/index.phtml';
+
+    echo '<br><br>';
+
+    //origem: Produto.php (Model) e IndexController.php (Controller)
+    foreach($this->view->dados as $indice => $produto) {
+
+        echo $produto['id'] . ' - ' . $produto['descricao'] . ' - ' . $produto['preco'];
+
+        echo '<br>';
+    }
+?>

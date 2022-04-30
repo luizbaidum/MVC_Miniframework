@@ -1,0 +1,21 @@
+//instruções e recursos obrigatórios
+{
+	"name": "miniframework",
+	"require": {
+		"php": ">=7.0"
+	},
+	"authors": [
+		{
+			"name": "Luiz Baidum",
+			"email": "teste@outlook.com"
+		}
+	],
+	"autoload": {
+		//forma como os arquivos são carregados
+		"psr-4": {
+			//namespace - mapeamento dos diretórios
+			"app\\": "app/",
+			"MF\\": "vendor/MF/"
+		}
+	}
+}
